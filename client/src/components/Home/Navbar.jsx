@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import logo from '/logo.svg';
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,11 +47,9 @@ const Navbar = () => {
           className="flex items-center transition-transform duration-300 hover:scale-105"
           onClick={closeMobileMenu}
         >
-          <img
-            src={logo}
-            alt="Resume"
-            className="h-9 w-auto drop-shadow-sm"
-          />
+          <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            Resume.
+          </span>
         </Link>
 
         {/* Desktop Navigation Links */}
