@@ -16,8 +16,10 @@ const Navbar = () => {
   return (
     <div className='shadow bg-white'>
       <nav className='flex item-center justify-between max-w-7xl mx-auto px-4 py-3.5 text-slate-800 transition-all'>
-        <Link to="/">
-          <img src="/logo.svg" alt="logo" className='brightness-0' />
+        <Link to="/" className="flex items-center">
+          <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            Resume.
+          </span>
         </Link>
         <div className="flex items-center gap-4 text-sm">
           <p className='max-sm:hidden'>Hi {user?.name}</p>
